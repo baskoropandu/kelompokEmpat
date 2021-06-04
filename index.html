@@ -1,0 +1,109 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Satisfy&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Sportiv8</title>
+  </head>
+  <body>      
+
+<!-- PRODUCT PAGE SECTION -->
+        <!-- Nav section -->
+        <div id="productPage">
+          <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                  <!-- <a class="navbar-brand" id="logo" href="#">Sportiv8</a> -->
+                  <img class="logo" src="assets/1-4.png">
+                  <button class="navbar-toggler border-dark" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-bars" style="font-size: 1.2em;"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                      <form class="d-flex ml-lg-5">
+                          <input id="search-bar" class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                          <button id="btn-search" class="btn btn-dark" type="submit">Search</button>
+                      </form>
+                      <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll ml-auto" style="max-height: 100px; ">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#landingPage">Home<span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                          <li class="ml-2 nav-item">
+                              <!-- Cart button and Cart Modal -->
+                              <button id="btn-cart" type="button" data-toggle="modal" data-target="#contohModal"><i class="fas fa-shopping-cart"></i></button>
+                              <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header text-center">
+                                        <h5 class="modal-title w-100 cart-title">My Cart</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" style="color: white;">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <table id="cartTable" class="table table-borderless">
+                                              <thead>
+                                                <tr>
+                                                  <th id="col-cart-img" scope="col"></th>
+                                                  <th id="col-cart-info" scope="col" style="font-size: 1.5rem;">Product</th>
+                                                  <th id="col-btn-delete-cart" scope="col"></th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td scope="row" id="productCartImgBody" class="product-cart-img"></td>
+                                                      <td scope="row" class="product-cart-info" id="productCartInfoBody"></td>
+                                                      <td scope="row" class="btn-cart-delete" id="productCartBtnDelBody"></td>
+                                                  </tr>
+                                              </tbody>
+                                            </table>
+                                      </div>
+                                      <div class="d-flex justify-content-center modal-footer" style="background-color: #fff;">
+                                          <button id="btn-checkout" class="btn btn-warning font-weight-bold">Checkout</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          <!-- Catalog Section -->
+          <div class="container">
+              <div id="content" class="mt-5 d-flex flex-wrap product-catalog justify-content-center">
+              </div>
+          </div>
+        </div>
+      <!-- END PRODUCT PAGE SECTION  -->
+
+
+
+    <!-- CHECKOUT SECTION -->
+    <!-- END CHECKOUT SECTION -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
